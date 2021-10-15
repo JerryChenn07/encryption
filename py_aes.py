@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import base64
 
 # pip install pycryptodome
@@ -35,7 +34,8 @@ def aes_decrypt(key, text):
 
 
 if __name__ == '__main__':
-    ret_aes_encrypt = aes_encrypt('key', '11111111')
-    ret_aes_decrypt = aes_decrypt('key', ret_aes_encrypt)
+    # 期望 7Tyj2uXr2l/8GiYfASTedw==
+    ret_aes_encrypt = aes_encrypt('abcdefgabcdefg12', 'Ksai1234')
+    ret_aes_decrypt = aes_decrypt('abcdefgabcdefg12', ret_aes_encrypt)
     print(ret_aes_encrypt)
     print(ret_aes_decrypt)

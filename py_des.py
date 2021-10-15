@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import binascii
 
 from pyDes import des, CBC, PAD_PKCS5
